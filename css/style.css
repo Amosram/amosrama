@@ -902,7 +902,7 @@ section {
 
     .sidebar {
         position: fixed;
-        top: 5%;
+        top: 4%;
         left: 0;
         width: 50%;
         z-index: 999;
@@ -985,7 +985,11 @@ section {
         justify-content: space-between;
         align-items: center;
         position:relative;
-        padding: 3rem 0;
+        padding: 3rem 1rem;
+    }
+
+    .services-content .services-layer {
+        padding: 2rem .7rem; 
     }
 
     .services-content .h2 {
@@ -1162,6 +1166,11 @@ section {
     .social-icons {
         gap: .5rem;
     }
+
+    .services-content h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 430px ) {
@@ -1228,6 +1237,10 @@ section {
 
     .bar {
         padding: 4px 1px;
+    }
+
+    .read-more a {
+        overflow-y: hidden;
     }
 }
 
