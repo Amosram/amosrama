@@ -50,7 +50,7 @@ section {
 
 
 .logo a {
-    color: white;
+    color: var(--text-color-2);
     font-size: 2rem;
     font-family: "Orbitron", sans-serif;
     font-size: 1.5rem;
@@ -73,12 +73,6 @@ section {
     display: none;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .navbar a {
     padding-right: 2rem;
     color: var(--text-color-2);
@@ -89,10 +83,11 @@ section {
     color: var(--sec-main-color);
 }
 
+
 .contact {
     background: var(--sec-main-color);
     padding: 7px 8px;
-    border-radius: 3px;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -113,9 +108,7 @@ section {
 }
 
 /* Hero section */
-.hero {
-    margin-top: 3rem;
-}
+
 
 .hero-container {
     background: var(--main-color);
@@ -148,8 +141,9 @@ section {
 .blocks {
     position: absolute;
     background-color: var(--sec-main-color);
-    width: 50px;
+    width: 100px;
     height: 100px;
+    border-radius: 50%;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.4);
 }
 
@@ -879,13 +873,8 @@ section {
 }
 
 /* BREAKPOINTS */
-@media (min-width: 1400px) {
-    html {
-        font-size: 55%;
-    }
-}
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .hero-one h2 {
         font-size: 2.4rem;
     }
@@ -905,6 +894,44 @@ section {
     .navbar {
         display: none;
     }
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 5%;
+        left: 0;
+        width: 50%;
+        z-index: 999;
+        background: var(--main-color);
+        height: 100vh;
+        transform: translateX(-500px);
+        transition: .5s ease-in;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .sidebar .contact-link {
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+    }
+
+
+    .sidebar a {
+        color: var(--text-color-2);
+        padding: 1rem 10%;
+        display: block;
+        font-size: 1.3rem;
+    }
+
+
+
     .hero-container {
         padding: 3rem 4rem;
     }
@@ -989,6 +1016,10 @@ section {
    .hero-container {
         padding: 2rem 3rem;
     } 
+
+    .sidebar {
+        width: 60%;
+    }
 }
 
 @media (max-width: 647px) {
@@ -996,6 +1027,10 @@ section {
         font-size: 1rem;
         margin-bottom: .4rem;
         font-weight: 600;
+    }
+
+    .sidebar {
+        width: 65%;
     }
     
     .services-layer p {
@@ -1053,6 +1088,10 @@ section {
         font-size: .9rem;
     }
 
+    .sidebar {
+        width: 65%;
+    }
+
     .services .heading {
         font-size: 1.4rem;
     }
@@ -1077,6 +1116,10 @@ section {
     .about-img {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+    }
+
+    .bar {
+        padding: 4px 2px;
     }
 }
 
@@ -1121,10 +1164,24 @@ section {
     }
 }
 
-@media (max-width: 428px ) {
+@media (max-width: 430px ) {
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
         gap: 1.8rem;
+    }
+
+    .sidebar a {
+        font-size: 1rem;
+    }
+
+    .sidebar {
+        top: 5%;
+    }
+}
+
+@media (max-width: 414px) {
+    .sidebar {
+        top: 5%;
     }
 }
 
@@ -1136,6 +1193,10 @@ section {
 @media (max-width: 375px) {
     .about-info {
         gap: .5rem;
+    }
+
+    .sidebar {
+        top: 6%;
     }
 
     .hero-one h2 {
@@ -1165,6 +1226,9 @@ section {
         padding: 2px 4px;
     }
 
+    .bar {
+        padding: 4px 1px;
+    }
 }
 
 @media (max-width: 366px) {
@@ -1177,5 +1241,11 @@ section {
     .about-info h2 {
         font-size: 1rem;
         margin-bottom: .2rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .sidebar {
+        top: 8%;    
     }
 }

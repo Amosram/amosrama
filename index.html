@@ -20,26 +20,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=Orbitron:wght@400..900&family=Pacifico&display=swap" rel="stylesheet">
+  
     <!-- custorm css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="#">Amos<span>ram</span></a>
-        </div>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
+    <div class="main-header">
+        <header class="header">
+            <div class="logo">
+                <a href="#">Amos<span>ram</span></a>
+            </div>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Work</a>
+            </nav>
+    
+            <div class="contact">
+                <a href="#contact">Contact<i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </header>
+
+        <nav class="sidebar">
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Work</a>
+            <a href="#contact" class="contact-link">Contact<i class="fa-regular fa-envelope"></i></a>
         </nav>
-
-        <div class="contact">
-            <a href="#contact">Contact<i class="fa-regular fa-envelope"></i></a>
-        </div>
-    </header>
+    </div>
+   
 
     <!-- hero -->
     <section class="hero" id="home">

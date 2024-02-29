@@ -29,6 +29,15 @@ function animateBlocks () {
 
 animateBlocks()
 
+/******MENU BARS*****/
+let menuIcon = document.querySelector('#menu-icon');
+let sideBar = document.querySelector('.sidebar');
+
+
+menuIcon.onclick = () => {
+    sideBar.classList.toggle("active");
+}
+
 /*ACTIVE ELEMENTS*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -48,4 +57,9 @@ window.onscroll = () => {
             });
         };
     });
+
+    header.classList.toggle("sticky", window.scrollY > 70 );
+
+    sideBar.classList.remove('active');
 }
+
