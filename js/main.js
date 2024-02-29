@@ -63,3 +63,5 @@ window.onscroll = () => {
     sideBar.classList.remove('active');
 }
 
+AOS.init();
+
