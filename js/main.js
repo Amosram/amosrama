@@ -63,5 +63,16 @@ window.onscroll = () => {
     sideBar.classList.remove('active');
 }
 
-AOS.init();
+/*AOS LIBRARY*/
+const mqlist =window.matchMedia('max-width: 500px');
+if (mqlist.matches) {
+    setDelay(400);
+}
+mqlist.addEventListener('change', function(mql) {
+    if (mql.matches) {
+        setDelay(400);
+    }
+})
+
+AOS.init({once: true});
 

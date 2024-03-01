@@ -37,6 +37,10 @@ section {
 i {
     overflow-y: hidden;
 }
+
+span {
+    color: var(--sec-main-color);
+}
 /* Header */
 
 .header {
@@ -189,6 +193,7 @@ i {
     font-weight: 500;
     margin-bottom: 1rem;
     letter-spacing: 1.5px;
+    text-align: center;
 }
 
 .hero-two {
@@ -529,6 +534,7 @@ i {
     font-size: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .services .heading span {
@@ -626,18 +632,20 @@ i {
 
 /* Portfolio */
 .portfolio {
-    background: linear-gradient(45deg, #062C30, #15F5BA);
+    background: url(../images/port-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
     flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
 }
 
 .portfolio .titles {
     width: 100%;
+    padding: 1rem 7%;
+    text-align: center;
 }
 
 .portfolio-box img {
@@ -668,8 +676,10 @@ i {
 .portfolio .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
     align-items: center;
-    gap: 2.5rem
+    gap: 2.5rem;
+    padding: 2rem 7%;
 }
 
 .portfolio-container .portfolio-box {
@@ -1219,13 +1229,13 @@ i {
     }
 
 }
-@media (max-width: 375px) {
+@media (max-width: 392px) {
     .about-info {
         gap: .5rem;
     }
 
     .sidebar {
-        top: 6%;
+        top: 7%;
     }
 
     .hero-one h2 {
@@ -1302,6 +1312,9 @@ i {
         padding: 4px 8px;
     }
 
+    .sidebar {
+        top: 6%;    
+    }
 
 }
 
