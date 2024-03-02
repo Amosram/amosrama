@@ -846,10 +846,16 @@ span {
     color: var(--text-color-2);
 }
 
+.footer p {
+    font-size: .8rem;
+}
+
 .footer span {
     color: var(--sec-main-color);
     font-family: "Orbitron", sans-serif;
     font-weight: 600 ;
+    padding: 0 3px;
+    font-size: .9rem;
 }
 
 .footer-icons {
@@ -924,18 +930,21 @@ span {
 
     .sidebar {
         position: fixed;
-        top: 4%;
+        top: 0;
         left: 0;
-        width: 50%;
+        width: 60%;
         z-index: 999;
         background: var(--main-color);
         height: 100vh;
-        transform: translateX(-500px);
-        transition: .5s ease-in;
+        transform: translateX(-1000px);
+        border-radius: 50%;
+        transition: .5s ease-in-out;
     }
+
 
     .sidebar.active {
         transform: translateX(0);
+        border-radius: 0;
     }
 
     .sidebar .contact-link {
@@ -952,7 +961,14 @@ span {
         font-size: 1.3rem;
     }
 
+    .sidebar .logo a {
+        font-size: 1.4rem;
+        margin-top: -0.4rem;
+    }
 
+    .sidebar .logo a span {
+        font-size: 1.4rem;
+    }
 
     .hero-container {
         padding: 3rem 4rem;
@@ -1043,9 +1059,6 @@ span {
         padding: 2rem 3rem;
     } 
 
-    .sidebar {
-        width: 60%;
-    }
 }
 
 @media (max-width: 647px) {
@@ -1055,9 +1068,6 @@ span {
         font-weight: 600;
     }
 
-    .sidebar {
-        width: 65%;
-    }
     
     .services-layer p {
         font-size: .8rem;
@@ -1114,9 +1124,15 @@ span {
         font-size: .9rem;
     }
 
-    .sidebar {
-        width: 65%;
+    .sidebar .logo a {
+        font-size: 1.4rem;
+        margin-top: -0.4rem;
     }
+
+    .sidebar .logo a span {
+        font-size: 1.4rem;
+    }
+
 
     .services .heading {
         font-size: 1.4rem;
@@ -1205,15 +1221,18 @@ span {
         font-size: 1rem;
     }
 
-    .sidebar {
-        top: 5%;
+    .footer-icons p {
+        font-size: .5rem;
     }
+
+    .footer p span {
+        font-size: .6rem;
+    }
+
 }
 
 @media (max-width: 414px) {
-    .sidebar {
-        top: 5%;
-    }
+   
 
     .about-info {
         display: grid;
@@ -1234,9 +1253,6 @@ span {
         gap: .5rem;
     }
 
-    .sidebar {
-        top: 7%;
-    }
 
     .hero-one h2 {
         font-size: 2rem;
@@ -1312,22 +1328,11 @@ span {
         padding: 4px 8px;
     }
 
-    .sidebar {
-        top: 6%;    
-    }
 
 }
 
-@media (max-width: 330px) {
-    .sidebar {
-        top: 8%;    
-    }
-}
 
 @media (max-width: 280px) {
-    .sidebar {
-        top: 7%;    
-    }
 
     .hero-one h2 {
         font-size: 1.5rem;
@@ -1370,6 +1375,10 @@ span {
 
     .contact-col-2 .headers {
         font-size: 1rem !important;
+    }
+
+    .sidebar {
+        width: 70%;
     }
 }
 
