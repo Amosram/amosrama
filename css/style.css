@@ -1169,6 +1169,11 @@ span {
     .hero-container {
         padding: .6rem .6rem;
     }
+
+    .portfolio img {
+        width: 320px;
+        height: 200px;
+    }
    
 }
 
