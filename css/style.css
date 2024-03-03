@@ -745,7 +745,7 @@ span {
 
 /* contact */
 .contact-page {
-    background: url(../images/imattsmart-kigHD-rVJzA-unsplash.jpg) no-repeat;
+    background: url(../images/contact-img.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -1222,11 +1222,11 @@ span {
     }
 
     .footer-icons p {
-        font-size: .5rem;
+        font-size: .4rem;
     }
 
     .footer p span {
-        font-size: .6rem;
+        font-size: .8rem;
     }
 
 }
