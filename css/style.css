@@ -21,6 +21,7 @@
 body {
     background: var(--bg-color);
     scroll-behavior: smooth;
+    position: relative;
 }
 
 section {
@@ -745,7 +746,7 @@ span {
 
 /* contact */
 .contact-page {
-    background: url(../images/contact-img.jpg) no-repeat;
+    background: url(../images/bg-contact.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -833,6 +834,11 @@ span {
     box-shadow: 0 0 3px var(--main-color);
 }
 
+.footer object {
+    width: 40px;
+    height: 40px;
+}
+
 /* footer */
 
 .footer {
@@ -844,6 +850,7 @@ span {
     align-items: center;
     flex-direction: column;
     color: var(--text-color-2);
+
 }
 
 .footer p {
@@ -899,6 +906,7 @@ span {
 .footer .arrow-up i:hover {
     box-shadow: 0 0 10px var(--sec-main-color);
 }
+
 
 /* BREAKPOINTS */
 
