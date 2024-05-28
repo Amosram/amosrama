@@ -43,6 +43,18 @@ span {
     color: var(--sec-main-color);
 }
 
+html::-webkit-scrollbar {
+    width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+}
+
 /* Header */
 
 .header {
