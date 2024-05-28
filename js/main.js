@@ -32,6 +32,7 @@ animateBlocks()
 /******MENU BARS*****/
 let menuIcon = document.querySelector('#menu-icon');
 let sideBar = document.querySelector('.sidebar');
+let overLay = document.querySelectorAll('.overlay');
 
 
 menuIcon.onclick = () => {
@@ -75,7 +76,6 @@ mqlist.addEventListener('change', function(mql) {
 })
 
 AOS.init({once: true});
-
 
 
 

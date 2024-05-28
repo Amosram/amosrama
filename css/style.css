@@ -42,6 +42,7 @@ i {
 span {
     color: var(--sec-main-color);
 }
+
 /* Header */
 
 .header {
@@ -55,7 +56,7 @@ span {
     background: var(--main-color);
     padding: .8rem 9%;
     box-shadow: 0 0 15px var(--text-color);
-    z-index: 100;
+    z-index: 999;
 }
 
 .navbar .active {
@@ -141,7 +142,6 @@ span {
     }
     
 }
-
 
 .hero {
     display: flex;
@@ -956,8 +956,7 @@ span {
         border-radius: 50%;
         transition: .5s ease-in-out;
     }
-
-
+    
     .sidebar.active {
         transform: translateX(0);
         border-radius: 0;
@@ -1349,7 +1348,9 @@ span {
         padding: 4px 8px;
     }
 
-
+    .hero-two h4 {
+        display: none;
+    }
 }
 
 
@@ -1400,6 +1401,10 @@ span {
 
     .sidebar {
         width: 70%;
+    }
+
+    .hero-two h4 {
+        display: none;
     }
 }
 
