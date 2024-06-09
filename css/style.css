@@ -6,7 +6,6 @@
     font-family: 'ubuntu', sans-serif;
     overflow-x: hidden;
     text-decoration: none;
-    scroll-behavior: smooth;
 }
 
 
@@ -16,6 +15,11 @@
     --sec-main-color: #24A19C;
     --text-color: #191919;
     --text-color-2: #FCFFE7;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 body {
