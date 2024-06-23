@@ -631,7 +631,9 @@ html::-webkit-scrollbar-thumb {
 
 .services-layer p {
     margin-bottom: 1.5rem;
+    font-size: 15px;
     color: var(--main-color);
+    text-align: center;
 }
 
 .services-layer a {
