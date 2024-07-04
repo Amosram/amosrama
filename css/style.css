@@ -481,7 +481,7 @@ html::-webkit-scrollbar-thumb {
 }
 @keyframes html-fill {
     100% {
-        width: 93%;
+        width: 100%;
     }
 }
 
@@ -490,7 +490,7 @@ html::-webkit-scrollbar-thumb {
 }
 @keyframes css-fill {
     100% {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -508,7 +508,15 @@ html::-webkit-scrollbar-thumb {
 }
 @keyframes js-fill {
     100% {
-        width: 67%;
+        width: 83%;
+    }
+}
+#react-bar {
+    animation: react-fill 2s forwards;
+}
+@keyframes react-fill {
+    100% {
+        width: 83%;
     }
 }
 
@@ -535,7 +543,39 @@ html::-webkit-scrollbar-thumb {
 }
 @keyframes git-fill {
     100% {
-        width: 66%;
+        width: 94%;
+    }
+}
+#express-bar {
+    animation: express-fill 2s forwards;
+}
+@keyframes express-fill {
+    100% {
+        width: 79%;
+    }
+}
+#node-bar {
+    animation: node-fill 2s forwards;
+}
+@keyframes node-fill {
+    100% {
+        width: 83%;
+    }
+}
+#postg-bar {
+    animation: postg-fill 2s forwards;
+}
+@keyframes postg-fill {
+    100% {
+        width: 73%;
+    }
+}
+#mongo-bar {
+    animation: mongo-fill 2s forwards;
+}
+@keyframes mongo-fill {
+    100% {
+        width: 87%;
     }
 }
 
