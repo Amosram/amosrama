@@ -335,6 +335,7 @@ html::-webkit-scrollbar-thumb {
     text-align:inherit;
     height: 100%;
     overflow-y: hidden;
+    margin-bottom: 1rem;
 }
 
 .about-content h2 {
